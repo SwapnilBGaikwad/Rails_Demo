@@ -1,0 +1,13 @@
+<table border="1px">
+<% @articles.each do |article| %>
+    <tr>
+        <td>
+            Title <%= article.title %>
+        </td>
+        <td>
+            Description <%= article.description %>
+        </td>
+    </tr>
+<% end %>
+</table>
+<%=link_to :New_Article , new_article_path %>
